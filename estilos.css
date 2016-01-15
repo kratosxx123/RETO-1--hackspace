@@ -1,0 +1,181 @@
+
+/*	= GENERAL
+--------------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  background: #A9DDF6;
+  color: #555555;
+  text-align: center;
+}
+
+#container {
+	width: 960px;
+	margin: 10px auto 0 auto;
+	text-align: left;
+}
+
+/*	= DISEÑO
+--------------------------------------------------- */
+
+header {
+	height: 90px;
+  padding:20px 0;
+	background: #F6F908;
+	padding: 10px;
+}
+
+#mainintro {
+	padding: 15px;
+	background: white;
+}
+
+nav {
+	/*overflow: hidden;*/
+  height: 100%;
+	float: left;
+  width: 200px;
+	background: #F95708;
+	z-index: 999;
+}
+
+main {
+	/*position: relative;*/
+	margin-left: 215px;
+	background: #DAF0BB;
+	overflow: hidden;
+  width: 715px;
+  z-index: 998;
+}
+
+main article {
+  margin-bottom: 20px;
+  background: #BBF0EE;
+  margin: 0 15px 30px 15px;
+  padding: 10px 20px;
+}
+
+body footer {
+  padding: 10px 0;
+  float: left;
+  width: 100%;
+  margin:10px 0 15px 0;
+  background: #EFBBF0;
+  text-align: center;
+}
+
+/*	= NAV
+--------------------------------------------------- */
+
+nav li{
+  list-style: none;
+  position: relative; /* importante, para que el submenu tome la posición correcta*/
+}
+nav li a{
+  color:#666;
+  text-decoration:none;
+  padding: 5px;
+  display:block;
+}
+nav li a:hover{
+  color:#08D;
+  background:#F8F8F8;
+  border:1px #ccc solid;
+}
+nav li.parent:hover{
+  border:1px #ccc solid;
+  margin:-1px;
+  background:#F8F8F8;
+}
+nav li li a{
+  width:200px;/*el ancho de los links del submenu, debe ser fijo, esto servirá para crear la animación mas adelante */
+  display:block;
+}
+/* aquí esta lo importante!! */
+nav li ul {
+  width: 200px;
+  margin:0;
+  display:none;
+  background:#F8F8F8;
+  border:1px #ccc solid;
+  position: absolute;
+  left: 100%;
+  top:-1px;
+}
+
+nav li:hover ul {
+  display: block;
+}
+
+/*	= ARTICLE-HEADER
+--------------------------------------------------- */
+
+main article header {
+	background: #EFC9F4;
+  padding: 5px;
+  margin: 0;
+}
+
+/*  = ARTICLE-FOOTER
+--------------------------------------------------- */
+
+#etiqueta-main {
+  margin: 0 15px 15px 15px;
+}
+
+main article header hgroup {
+  padding-left: 5px;
+  background: #F6E1B9;
+  margin: 10px;
+}
+main article header time {
+  background: #B9F6DE;
+  margin-left: 10px;
+}
+
+main article p {
+  margin-left: 10px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+main article footer {
+  background: #EDCE53;
+  padding: 0;
+  margin-bottom: 15px;
+  float: none;
+}
+
+main article article {
+  background: #AFF09B;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  margin-right: 0;
+  padding: 5px 10px;
+}
+
+main article article time {
+  background: #F6B5F8;
+  margin: 0;
+  padding: 0;
+}
+
+main article article p {
+  margin: 10px;
+}
+
+main article form {
+  background: #FBF205;
+  margin: 0;
+  padding: 10px;
+}
+
+main article form input[type='text'] {
+  width: 90%;
+  height: 50px;
+  margin-bottom: 5px;
+}
